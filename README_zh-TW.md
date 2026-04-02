@@ -1,4 +1,11 @@
+[English](README.md) | [繁體中文](README_zh-TW.md)
+
 # Tesla FSD 解鎖 — Flipper Zero
+
+[![GitHub stars](https://img.shields.io/github/stars/hypery11/flipper-tesla-fsd?style=flat-square)](https://github.com/hypery11/flipper-tesla-fsd/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/hypery11/flipper-tesla-fsd?style=flat-square)](https://github.com/hypery11/flipper-tesla-fsd/network)
+[![GitHub release](https://img.shields.io/github/v/release/hypery11/flipper-tesla-fsd?style=flat-square)](https://github.com/hypery11/flipper-tesla-fsd/releases)
+[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue?style=flat-square)](LICENSE)
 
 用 Flipper Zero 解鎖 Tesla FSD。不用訂閱、不用電腦，插上 OBD-II 就能跑。
 
@@ -33,14 +40,9 @@ HW4 車輛韌體版本 **2026.2.3 以前**請使用 HW3 模式。詳見[相容�
 
 ### 接線
 
-把 CAN Add-On 接到 Tesla 的 OBD-II 口：
-
-```
-Tesla OBD-II（駕駛座儀表板下方）
-  Pin 6  ──── CAN-H ──── CAN Add-On CAN-H
-  Pin 14 ──── CAN-L ──── CAN Add-On CAN-L
-  Pin 4  ──── GND   ──── CAN Add-On GND
-```
+<p align="center">
+  <img src="assets/wiring_diagram.png" alt="接線圖" width="700">
+</p>
 
 > **重要：** 把 CAN Add-On 板上的 120 歐姆終端電阻切斷或停用。車上的 CAN bus 已經有自己的終端電阻，多一個會造成通訊錯誤。
 

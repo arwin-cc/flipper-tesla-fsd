@@ -2,6 +2,12 @@
 
 # Tesla FSD Unlock for Flipper Zero
 
+[![GitHub stars](https://img.shields.io/github/stars/hypery11/flipper-tesla-fsd?style=flat-square)](https://github.com/hypery11/flipper-tesla-fsd/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/hypery11/flipper-tesla-fsd?style=flat-square)](https://github.com/hypery11/flipper-tesla-fsd/network)
+[![GitHub release](https://img.shields.io/github/v/release/hypery11/flipper-tesla-fsd?style=flat-square)](https://github.com/hypery11/flipper-tesla-fsd/releases)
+[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue?style=flat-square)](LICENSE)
+[![Build](https://img.shields.io/badge/build-ufbt-brightgreen?style=flat-square)](https://github.com/flipperdevices/flipperzero-ufbt)
+
 Unlock Tesla FSD on your Flipper Zero. No subscription, no computer, just plug into OBD-II and go.
 
 ---
@@ -35,14 +41,9 @@ HW4 vehicles on firmware **before 2026.2.3** should use HW3 mode. See [Compatibi
 
 ### Wiring
 
-Connect the CAN Add-On to your Tesla's OBD-II port:
-
-```
-Tesla OBD-II (under driver's dash)
-  Pin 6  ──── CAN-H ──── CAN Add-On CAN-H
-  Pin 14 ──── CAN-L ──── CAN Add-On CAN-L
-  Pin 4  ──── GND   ──── CAN Add-On GND
-```
+<p align="center">
+  <img src="assets/wiring_diagram.png" alt="Wiring Diagram" width="700">
+</p>
 
 > **Important:** Cut or disable the 120-ohm termination resistor on the CAN Add-On. The vehicle's CAN bus already has its own termination — adding a second one causes communication errors.
 
